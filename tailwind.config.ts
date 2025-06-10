@@ -19,9 +19,11 @@ const config = {
   // Enabling dark mode
   darkMode: ['class', 'class'], // Assuming you want to enable dark mode based on the class strategy
   theme: {
-    // Adding font family
+    // Adding font family based on UI/UX design
     fontFamily: {
-      sora: ['Sora', 'sans-serif'],
+      sans: ['Inter', '-apple-system', 'BlinkMacSystemFont', 'sans-serif'], // Primary font
+      serif: ['Crimson Text', 'serif'], // Headings font  
+      arabic: ['Noto Sans Arabic', 'sans-serif'], // Arabic text support
     },
     // Merging container configuration from the second file
     container: {

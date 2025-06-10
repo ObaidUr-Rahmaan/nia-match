@@ -1,0 +1,179 @@
+# Product Requirements Document (PRD)
+## Nia Match - Muslim Marriage Platform MVP
+
+### Introduction
+
+**Problem Statement**
+Practicing Muslims seeking marriage face significant challenges in finding compatible partners who align with both their religious values and personality traits. Current marriage platforms prioritize superficial criteria (appearance, income, education) over deeper compatibility factors, leading to poor matches, relationship dissatisfaction, and ultimately failed marriages within the Muslim community.
+
+**Product Vision**
+Create a simple, Islamically compliant marriage platform that connects practicing Muslims globally through scientifically-backed personality assessment (Enneagram) and comprehensive deal-breaker filtering, while maintaining Islamic etiquette through mandatory Wali involvement in all communications.
+
+### Objectives & Goals
+
+**Primary Objective**
+Increase marriage compatibility and satisfaction rates among practicing Muslims by focusing on personality alignment and religious deal-breaker compatibility rather than superficial criteria.
+
+**Core Goals**
+- Achieve 50% match acceptance rate within 7 days of user signup
+- Maintain 80% user satisfaction with match quality
+- Ensure 100% Islamic compliance through Wali-mediated communications
+- Build trust within Muslim communities for organic, word-of-mouth growth
+
+### Target Users & Roles
+
+**Primary Users**
+- **Profile**: Single, practicing Muslims aged 25-35 globally
+- **Religious Commitment**: Moderate to high (regular Salah, Islamic dress codes, halal lifestyle)
+- **Tech Comfort**: Basic to intermediate digital literacy
+- **Marriage Intent**: Serious about finding a spouse within Islamic guidelines
+
+**User Roles**
+1. **Seeker**: Individual looking for marriage partner
+2. **Wali/Guardian**: Family member facilitating Islamic-compliant communication
+3. **Admin**: Platform moderator (future scope)
+
+### Core Features for MVP
+
+#### 1. Comprehensive Onboarding & Assessment
+- **Official Enneagram Test**: Full personality assessment during signup
+- **Deal-breaker Configuration**: 9 key compatibility filters
+  - Aqeedah/Religious sect alignment
+  - Geographic location and relocation willingness
+  - Living arrangements (with in-laws vs. independent)
+  - Hijrah (migration for faith) intentions
+  - Temperament preferences (patience levels)
+  - Hygiene and cleanliness standards
+  - Children and family planning goals
+  - Social media presence comfort levels
+  - Reference availability for verification
+- **Wali Information**: Guardian contact details and relationship
+
+#### 2. Intelligent Matching Algorithm
+- **Personality Compatibility**: Enneagram-based matching using established compatibility matrices
+- **Deal-breaker Filtering**: Strict adherence to user-defined non-negotiables
+- **Match Frequency**: Maximum 3 high-quality matches per week
+- **Match Display**: Enneagram type, personality strengths/weaknesses, deal-breaker alignment
+- **Feedback Learning**: Algorithm adjustment based on rejection patterns
+
+#### 3. Islamic Communication Framework
+- **Wali-Mediated Chats**: All communications include guardian from both sides
+- **In-App Group Chat**: Real-time messaging within the platform with all participants
+- **Mutual Consent**: Both parties must accept match before communication begins
+- **No Direct Messaging**: Maintains Islamic modesty guidelines
+- **No Image Sharing**: Focus on personality and compatibility over physical appearance
+
+### Future Scope (Post-MVP)
+
+**Phase 2 Features**
+- Advanced verification system (identity, marital status, references)
+- Video introduction capabilities (with Wali present)
+- Regional matchmaking events and community partnerships
+- Mobile app development (currently web-only)
+- Enhanced reporting and blocking capabilities
+
+**Phase 3 Features**
+- AI-powered conversation suggestions for families
+- Integration with Islamic scholars for guidance
+- Success story tracking and testimonials
+- Community forums and educational content
+
+### User Journey
+
+#### Seeker Registration Flow
+1. **Landing Page**: Islamic values-focused messaging and registration CTA
+2. **Account Creation**: Basic demographics (name, age, location, gender)
+3. **Enneagram Assessment**: Complete official personality test (15-20 minutes)
+4. **Deal-breaker Setup**: Configure 9 compatibility filters with explanations
+5. **Wali Information**: Provide guardian contact details and verification
+6. **Profile Review**: Confirm information accuracy before activation
+7. **Trial Period**: 14-day free access to all features
+
+#### Matching & Communication Flow
+1. **Match Delivery**: Up to 3 matches presented weekly in dashboard
+2. **Profile Review**: View Enneagram profile, strengths/weaknesses, deal-breaker alignment
+3. **Decision Making**: Accept, reject, or save for later consideration
+4. **Mutual Match**: When both parties accept, group chat invitation sent
+5. **Wali Coordination**: In-app group chat created with all participants (both families)
+6. **Guided Communication**: Structured conversation flow with Islamic etiquette reminders
+7. **Progress Tracking**: Families can update match status and provide feedback
+
+#### Subscription Conversion Flow
+1. **Trial Expiration**: 14-day warning notifications via email
+2. **Value Demonstration**: Show match quality and platform benefits
+3. **Payment Processing**: Stripe integration for subscription management
+4. **Continued Access**: Uninterrupted service for paying subscribers
+
+### Tech Stack
+
+**Frontend Framework**
+- Next.js 15 (App Router) for performance and SEO optimization
+- TypeScript for type safety and better developer experience
+- Tailwind CSS for responsive, mobile-first design
+
+**Authentication & User Management**
+- Clerk for secure authentication with 2FA support
+- Role-based access control for users and Walis
+
+**Database & ORM**
+- Supabase (PostgreSQL) for reliable, GDPR-compliant data storage
+- Drizzle ORM for type-safe database operations
+- Row-Level Security (RLS) for data protection
+
+**Communication Services**
+- Real-time messaging system for in-app group chats
+- Email notifications for new messages and important updates
+- Islamic etiquette guidelines integrated into chat interface
+
+**Payment Processing**
+- Stripe for subscription management and billing
+- Support for multiple currencies and payment methods
+
+**Deployment & Infrastructure**
+- Vercel for hosting and automatic deployments
+- CDN integration for global performance optimization
+
+**Third-Party Integrations**
+- Official Enneagram Institute test licensing
+- Potential integration with Islamic calendar APIs
+- Analytics tracking (privacy-compliant)
+
+### Success Metrics & KPIs
+
+**Primary Success Metrics**
+- Match acceptance rate: 50% within 7 days of signup
+- User engagement: 80% of users check matches within 24 hours
+- Conversion rate: 25% trial-to-paid subscription conversion
+- Retention rate: 70% monthly active user retention
+
+**Secondary Metrics**
+- Match quality score: Average user rating of 4+ stars
+- Communication initiation: 60% of mutual matches start conversations
+- Platform trust: 90% user satisfaction with Islamic compliance
+- Community growth: 30% new users from referrals
+
+**Business Metrics**
+- Customer Acquisition Cost (CAC) under £15 per user
+- Customer Lifetime Value (CLV) over £150 per subscriber
+- Monthly Recurring Revenue (MRR) growth of 20% month-over-month
+- Churn rate below 5% monthly for paying subscribers
+
+### Technical Implementation Notes
+
+**Existing Infrastructure**
+The project already has the following configured:
+- NextJS 15 with App Router
+- Clerk authentication
+- Supabase PostgreSQL database
+- Drizzle ORM
+- Stripe payment processing
+- Plunk email service
+- Vercel deployment
+
+**Additional Context**
+Please refer to the following documentation for comprehensive project understanding:
+- Database schema design (database-schema.md)
+- UI/UX design specifications (ui-ux-design.md)
+- User flow definitions (user-flows.md)
+- Technical decision documentation (tdd.md)
+- Legal requirements (privacy-policy.md, terms-of-service.md, refund-policy.md) 

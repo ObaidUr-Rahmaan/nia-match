@@ -1,0 +1,133 @@
+{
+  "meta": {
+    "generatedAt": "2025-06-10T19:35:24.217Z",
+    "tasksAnalyzed": 15,
+    "totalTasks": 15,
+    "analysisCount": 15,
+    "thresholdScore": 6,
+    "projectName": "Taskmaster",
+    "usedResearch": true
+  },
+  "complexityAnalysis": [
+    {
+      "taskId": 1,
+      "taskTitle": "Setup Project Structure and Configuration",
+      "complexityScore": 8,
+      "recommendedSubtasks": 5,
+      "expansionPrompt": "Break down the 'Setup Project Structure and Configuration' task into 5 subtasks, focusing on: 1) Next.js 15 initialization with TypeScript and Tailwind, 2) Infrastructure connections (Clerk, Supabase, Drizzle, Stripe, Plunk), 3) Project structure setup with folder organization, 4) Environment variable configuration, and 5) Code quality setup with ESLint and Prettier. Include detailed steps for each subtask.",
+      "reasoning": "This task involves setting up the entire foundation of the project with multiple technologies and infrastructure connections. The complexity is high (8/10) due to the need to integrate multiple services (Clerk, Supabase, Drizzle ORM, Stripe, Plunk) and configure them correctly. The App Router in Next.js 15 has a steeper learning curve and requires specific Next.js knowledge. The task also includes project structure organization, environment variable setup, and code quality tools configuration."
+    },
+    {
+      "taskId": 2,
+      "taskTitle": "Implement Authentication and Role-Based Access Control",
+      "complexityScore": 7,
+      "recommendedSubtasks": 4,
+      "expansionPrompt": "Divide the 'Implement Authentication and Role-Based Access Control' task into 4 subtasks: 1) Clerk configuration with custom sign-up/sign-in components, 2) Role-based access control implementation for Seekers and Walis, 3) Protected routes and middleware setup, 4) Custom authentication hooks and reusable components. Include implementation details and testing criteria for each subtask.",
+      "reasoning": "This task requires implementing authentication with Clerk and creating a role-based access control system for two user types. The complexity is high (7/10) because it involves custom authentication flows, role management, protected routes, and creating reusable authentication components and hooks. The task requires deep understanding of Clerk's authentication system and implementing proper middleware for route protection."
+    },
+    {
+      "taskId": 3,
+      "taskTitle": "Design and Implement Database Schema with Drizzle ORM",
+      "complexityScore": 9,
+      "recommendedSubtasks": 6,
+      "expansionPrompt": "Split the 'Design and Implement Database Schema with Drizzle ORM' task into 6 subtasks: 1) Core user and profile tables design, 2) Enneagram and deal-breakers tables design, 3) Matching and conversation tables design, 4) Row-Level Security implementation, 5) Migration and seeding scripts creation, 6) Type-safe query builders and performance optimization. Include schema definitions and relationships for each subtask.",
+      "reasoning": "This task involves designing and implementing a comprehensive database schema with multiple related tables using Drizzle ORM. The complexity is very high (9/10) due to the need to design relationships between users, profiles, enneagram results, deal-breakers, matches, conversations, and more. It also requires implementing Row-Level Security, creating migration scripts, setting up database seeding, and optimizing performance with indexes."
+    },
+    {
+      "taskId": 4,
+      "taskTitle": "Create Landing Page and Public Routes",
+      "complexityScore": 6,
+      "recommendedSubtasks": 3,
+      "expansionPrompt": "Divide the 'Create Landing Page and Public Routes' task into 3 subtasks: 1) Landing page design and implementation with hero section, value proposition, and CTAs, 2) Public routes creation including About, How it works, Pricing, and legal pages, 3) Reusable UI components, SEO optimization, and responsive navigation. Include component structure and design considerations for each subtask.",
+      "reasoning": "This task involves creating the public-facing parts of the application including the landing page and informational routes. The complexity is moderate (6/10) as it requires designing and implementing responsive UI components, creating multiple public routes, implementing SEO optimization, and ensuring a cohesive user experience. The task is primarily frontend-focused but requires attention to detail for Islamic values-focused messaging and proper SEO implementation."
+    },
+    {
+      "taskId": 5,
+      "taskTitle": "Implement Seeker Registration Flow",
+      "complexityScore": 7,
+      "recommendedSubtasks": 4,
+      "expansionPrompt": "Break down the 'Implement Seeker Registration Flow' task into 4 subtasks: 1) Multi-step form design and navigation, 2) Form validation with Zod and state management with React Hook Form, 3) Form persistence and progress tracking, 4) Form submission, error handling, and success confirmation. Include detailed implementation steps for each subtask.",
+      "reasoning": "This task involves creating a multi-step registration flow with form validation, state management, and persistence. The complexity is high (7/10) due to the need to manage form state across multiple steps, implement validation using Zod, ensure data persistence to prevent loss, and handle form submission with proper error handling. The task requires careful UX consideration for a smooth registration experience."
+    },
+    {
+      "taskId": 6,
+      "taskTitle": "Integrate Official Enneagram Test",
+      "complexityScore": 8,
+      "recommendedSubtasks": 5,
+      "expansionPrompt": "Divide the 'Integrate Official Enneagram Test' task into 5 subtasks: 1) Research and implementation of official Enneagram test questionnaire, 2) Test interface design with progress tracking, 3) Scoring algorithm implementation, 4) Results storage and database integration, 5) Results visualization and explanation page. Include algorithm details and UI considerations for each subtask.",
+      "reasoning": "This task requires implementing a complete personality assessment system with a questionnaire, scoring algorithm, and results visualization. The complexity is high (8/10) because it involves researching and implementing a validated Enneagram test, creating a sophisticated scoring algorithm, designing an intuitive test interface, and developing a comprehensive results page. The task also requires proper data storage and integration with the user profile."
+    },
+    {
+      "taskId": 7,
+      "taskTitle": "Implement Deal-Breaker Configuration",
+      "complexityScore": 7,
+      "recommendedSubtasks": 4,
+      "expansionPrompt": "Split the 'Implement Deal-Breaker Configuration' task into 4 subtasks: 1) Interface design for 9 key compatibility filters, 2) Form components creation for each deal-breaker type, 3) Importance ranking and explanation implementation, 4) Summary view, validation, and database storage. Include component specifications and data structure for each subtask.",
+      "reasoning": "This task involves creating an interface for users to configure 9 different compatibility filters with explanations and preference settings. The complexity is high (7/10) due to the need to design and implement form components for each deal-breaker type, create an importance ranking system, provide explanations for each filter, and store the preferences in the database. The task requires careful UX consideration to make complex preference selection intuitive."
+    },
+    {
+      "taskId": 8,
+      "taskTitle": "Develop Intelligent Matching Algorithm",
+      "complexityScore": 10,
+      "recommendedSubtasks": 6,
+      "expansionPrompt": "Break down the 'Develop Intelligent Matching Algorithm' task into 6 subtasks: 1) Enneagram compatibility matrices research and implementation, 2) Deal-breaker filtering algorithm development, 3) Combined matching algorithm creation with scoring system, 4) Match frequency control implementation, 5) Database query optimization for efficient matching, 6) Feedback learning mechanism and admin tools. Include algorithm pseudocode and optimization strategies for each subtask.",
+      "reasoning": "This task involves creating a sophisticated matching algorithm that combines Enneagram compatibility with deal-breaker filtering. The complexity is extremely high (10/10) because it requires implementing complex compatibility matrices, developing filtering algorithms, creating a combined scoring system, optimizing database queries for performance, and implementing a feedback learning mechanism. The algorithm is central to the application's value proposition and requires careful design and optimization."
+    },
+    {
+      "taskId": 9,
+      "taskTitle": "Create User Dashboard and Match Display",
+      "complexityScore": 7,
+      "recommendedSubtasks": 4,
+      "expansionPrompt": "Divide the 'Create User Dashboard and Match Display' task into 4 subtasks: 1) Dashboard layout design and implementation, 2) Match card component creation with personality and deal-breaker information, 3) Match list view with pagination and detailed profile view, 4) Match decision controls and history section. Include component structure and state management for each subtask.",
+      "reasoning": "This task involves designing and implementing the user dashboard to display matches with detailed information. The complexity is high (7/10) due to the need to create a comprehensive dashboard layout, design match cards with personality information and deal-breaker alignment, implement pagination for match lists, and create match decision controls. The task requires careful UI/UX consideration to present complex match information in an intuitive way."
+    },
+    {
+      "taskId": 10,
+      "taskTitle": "Implement Wali-Mediated Communication System",
+      "complexityScore": 9,
+      "recommendedSubtasks": 5,
+      "expansionPrompt": "Split the 'Implement Wali-Mediated Communication System' task into 5 subtasks: 1) Group chat system design with automatic participant addition, 2) Chat interface components creation, 3) WebSocket implementation for real-time updates, 4) Message storage and retrieval system, 5) Notification system and chat features (typing indicators, read receipts). Include real-time communication architecture and component design for each subtask.",
+      "reasoning": "This task involves creating a real-time communication system with group chats that include both seekers and their Walis. The complexity is very high (9/10) due to the need to implement WebSockets for real-time updates, create a message storage and retrieval system, design chat interface components, implement notifications, and add features like typing indicators and read receipts. The task requires careful consideration of real-time data synchronization and user experience."
+    },
+    {
+      "taskId": 11,
+      "taskTitle": "Implement Subscription and Payment System",
+      "complexityScore": 8,
+      "recommendedSubtasks": 5,
+      "expansionPrompt": "Break down the 'Implement Subscription and Payment System' task into 5 subtasks: 1) Subscription plans design and pricing tiers, 2) Stripe integration for payment processing, 3) Trial period implementation and subscription status tracking, 4) Webhook handling for Stripe events, 5) Subscription management UI and payment history. Include payment flow diagrams and database schema for each subtask.",
+      "reasoning": "This task involves setting up a subscription model with Stripe integration for payment processing. The complexity is high (8/10) due to the need to implement Stripe checkout, handle webhooks for various events, create subscription status tracking, implement trial periods, and develop a subscription management UI. The task requires careful handling of payment flows and edge cases to ensure a reliable subscription system."
+    },
+    {
+      "taskId": 12,
+      "taskTitle": "Create User Profile Management",
+      "complexityScore": 6,
+      "recommendedSubtasks": 3,
+      "expansionPrompt": "Divide the 'Create User Profile Management' task into 3 subtasks: 1) Profile view and edit interfaces design, 2) Forms for updating personal information and Wali details, 3) Enneagram results view and deal-breaker preferences editing. Include form validation and state management for each subtask.",
+      "reasoning": "This task involves implementing profile management functionality for users to view and update their information. The complexity is moderate (6/10) as it requires designing profile interfaces, creating forms for updating personal information, implementing Wali information management, and providing access to Enneagram results and deal-breaker preferences. The task is primarily focused on CRUD operations with form validation and state management."
+    },
+    {
+      "taskId": 13,
+      "taskTitle": "Implement Email Notification System",
+      "complexityScore": 7,
+      "recommendedSubtasks": 4,
+      "expansionPrompt": "Split the 'Implement Email Notification System' task into 4 subtasks: 1) Email templates design for various notification types, 2) Plunk email service integration, 3) Email scheduling and preference management, 4) Email tracking, analytics, and retry mechanism. Include template structure and integration details for each subtask.",
+      "reasoning": "This task involves setting up an email notification system using Plunk for various types of communications. The complexity is high (7/10) due to the need to design multiple email templates, implement service integration, create an email scheduling system, manage user preferences, and add tracking and analytics. The task requires careful consideration of email deliverability and user experience with notifications."
+    },
+    {
+      "taskId": 14,
+      "taskTitle": "Implement Analytics and Reporting",
+      "complexityScore": 8,
+      "recommendedSubtasks": 4,
+      "expansionPrompt": "Break down the 'Implement Analytics and Reporting' task into 4 subtasks: 1) Privacy-compliant analytics tracking implementation, 2) Dashboard creation for key metrics monitoring, 3) Event tracking system for user actions, 4) Reporting tools and data visualization for business metrics. Include data schema and visualization components for each subtask.",
+      "reasoning": "This task involves setting up analytics tracking and reporting for various metrics to measure platform success. The complexity is high (8/10) due to the need to implement privacy-compliant tracking, create dashboards for monitoring key metrics, develop an event tracking system, and build reporting tools with data visualization. The task requires careful consideration of data collection, analysis, and presentation to provide actionable insights."
+    },
+    {
+      "taskId": 15,
+      "taskTitle": "Implement Security and Compliance Measures",
+      "complexityScore": 9,
+      "recommendedSubtasks": 5,
+      "expansionPrompt": "Divide the 'Implement Security and Compliance Measures' task into 5 subtasks: 1) Row-Level Security implementation in Supabase, 2) Data encryption for sensitive information, 3) GDPR compliance features development, 4) User verification system creation, 5) Rate limiting, abuse prevention, and security monitoring. Include security policies and implementation details for each subtask.",
+      "reasoning": "This task involves implementing security features and ensuring compliance with privacy regulations. The complexity is very high (9/10) due to the need to implement Row-Level Security, set up data encryption, develop GDPR compliance features, create user verification systems, and implement security monitoring. The task requires deep understanding of security best practices and privacy regulations to ensure proper protection of user data."
+    }
+  ]
+}
