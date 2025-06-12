@@ -16,7 +16,7 @@ A simple, Islamically compliant marriage platform that connects practicing Musli
 - **Official Enneagram test** during signup for accurate personality assessment
 - **Deal-breaker filters**: Location, aqeedah, living with in-laws, hijrah plans, temperament, hygiene, children preferences, social media presence, references
 - **Smart matching algorithm**: Up to 3 matches per week based on Enneagram compatibility + deal-breaker alignment
-- **Match display**: Shows Enneagram type, strengths/weaknesses, and deal-breaker preferences (no photos)
+- **Match display**: Shows Enneagram type, strengths/weaknesses, and deal-breaker preferences (no photos or contact details)
 - **Rejection handling**: After 5 consecutive rejections, prompt user to review their deal-breakers
 
 ### 2. Islamically Compliant Communication
@@ -24,6 +24,7 @@ A simple, Islamically compliant marriage platform that connects practicing Musli
 - **In-app messaging system**: Real-time group chats within the platform
 - **No direct messaging**: Maintains modesty and Islamic guidelines
 - **Mutual acceptance required**: Both parties must agree before communication begins (before a group chat is created)
+- **Contact exchange**: Personal contact details shared organically during group chat conversations when all parties feel ready
 
 ## Success Metrics
 - **Primary KPI**: 50% of users accept at least one match within 7 days of signup
@@ -32,5 +33,5 @@ A simple, Islamically compliant marriage platform that connects practicing Musli
 ## Key Differentiators
 - Islamic compliance through Wali involvement
 - Personality-first matching over appearance
-- Privacy-focused (minimal PII collection)
+- Privacy-focused (no contact details in profiles, minimal PII collection)
 - Community-driven growth through mosque networks 
